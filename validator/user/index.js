@@ -1,4 +1,4 @@
-import { createUserSchema, loginUserSchema } from "./Schema";
+const { createUserSchema, loginUserSchema } = require("./Schema");
 
 function validateCreateUserSchema(payload) {
     const validateResult = createUserSchema.validate(payload);
@@ -15,4 +15,4 @@ function validateLoginUserSchema(payload) {
 }
 
 
-export { validateCreateUserSchema, validateLoginUserSchema};
+module.exports = { validateCreateUserSchema, validateLoginUserSchema};

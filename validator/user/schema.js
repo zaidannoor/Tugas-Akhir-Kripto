@@ -12,4 +12,4 @@ const loginUserSchema = Joi.object({
 }).unknown();
 
 
-export { createUserSchema, loginUserSchema};
+module.exports = { createUserSchema, loginUserSchema };

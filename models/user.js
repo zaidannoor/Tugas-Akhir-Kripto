@@ -37,4 +37,4 @@ function createModelUser(Sequelize, DataTypes) {
   return User;
 }
 
-export default createModelUser;
+module.exports = createModelUser;
